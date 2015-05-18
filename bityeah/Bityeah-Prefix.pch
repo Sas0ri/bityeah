@@ -1,0 +1,26 @@
+//
+// Prefix header for all source files of the 'HChat' target in the 'HChat' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+/*
+ 发布时需要将BPushConfig.plist文件中的PRODUCTION_MODE字段设为YES
+ */
+
+
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "BYDefinitions.h"
+    #import <MobileCoreServices/MobileCoreServices.h>
+#endif
+
+
+
+
